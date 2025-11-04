@@ -79,8 +79,8 @@ plt.ylabel('Frequency')
 plt.xticks(height_bins)
 
 plt.tight_layout()
-# plt.show()
-plt.close()
+plt.show()
+# plt.close()
 
 
 
@@ -155,8 +155,8 @@ for i, (label, data_entry) in enumerate(zip(labels, data_list)):
     print(f"  Q(0.75): {q3}")
     print(f"  Number of Outliers: {len(outliers)}\n")
 
-# plt.show()
-plt.close()
+plt.show()
+# plt.close()
 
 # Create a stacked bar chart for the data of VTFV, Diabetes and Hypertension, with “VTFV”, “Diabetes” and “Hypertension” on the x-axis and absolute frequency of “Yes” and “No” as stacked bar on the y-axis. 	
 
