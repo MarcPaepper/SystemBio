@@ -88,7 +88,7 @@ plt.close()
 # --- Boxplot Section ---
 # Outlier cutoff factors for each variable (edit these as needed)
 outlier_cutoffs = {
-    'Age': np.inf,      # Extend whiskers to min/max (no outliers)
+    'Age': 1.5,      # Extend whiskers to min/max (no outliers)
     'Weight': 1.5,      # Standard 1.5 IQR for outlier detection
     'Height': 1.5,      # Standard 1.5 IQR for outlier detection
     'TIN.median': 1.5   # Standard 1.5 IQR for outlier detection
@@ -113,7 +113,7 @@ box = plt.boxplot(
     labels=labels,            # X-axis labels
     patch_artist=True,        # Enable box fill color
     showmeans=False,          # Do not show mean marker
-    showfliers=False,         # Do not show outliers
+    showfliers=True,         # Do not show outliers
     boxprops=boxprops,        # Box style
     medianprops=medianprops,  # Median line style
     capprops=capprops,        # Cap style
